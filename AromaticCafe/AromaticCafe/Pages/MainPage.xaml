@@ -1,0 +1,3520 @@
+﻿<Page
+    x:Class="AromaticCafe.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AromaticCafe.Pages"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainPage"
+    d:DesignHeight="720"
+    d:DesignWidth="720"
+    Background="White"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Storyboard x:Key="MenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridMenu" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridMenu" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="ProfileOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridProfile" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ProfileClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridProfile" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="AboutCafeOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridAboutCafe" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AboutCafeClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GridAboutCafe" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}" />
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenProfile">
+            <BeginStoryboard Storyboard="{StaticResource ProfileOpen}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseProfile">
+            <BeginStoryboard Storyboard="{StaticResource ProfileClose}" />
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenAboutCafe">
+            <BeginStoryboard Storyboard="{StaticResource AboutCafeOpen}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseAboutCafe">
+            <BeginStoryboard Storyboard="{StaticResource AboutCafeClose}" />
+        </EventTrigger>
+    </Page.Triggers>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="{StaticResource Background}" />
+        </Grid.Background>
+
+        <Grid>
+            <Label
+                Margin="141,0,153,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                Content="Aromatic"
+                FontFamily="Algerian"
+                FontSize="82"
+                Foreground="#FFFF0035">
+
+                <Label.Effect>
+                    <DropShadowEffect
+                        BlurRadius="5"
+                        Direction="315"
+                        Opacity=".3"
+                        ShadowDepth="10" />
+                </Label.Effect>
+            </Label>
+
+            <Label
+                Margin="0,90,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                Content="cafe"
+                FontFamily="Algerian"
+                FontSize="36"
+                Foreground="#FFFF0035">
+
+                <Label.Effect>
+                    <DropShadowEffect
+                        BlurRadius="5"
+                        Direction="315"
+                        Opacity=".3"
+                        ShadowDepth="10"
+                        Color="Black" />
+                </Label.Effect>
+            </Label>
+        </Grid>
+
+        <Grid
+            Width="650"
+            Height="500"
+            Margin="0,100,0,0">
+            <Border Background="#F9FFFFFF" CornerRadius="50">
+
+                <Border.Effect>
+                    <DropShadowEffect
+                        BlurRadius="5"
+                        Direction="315"
+                        Opacity=".3"
+                        ShadowDepth="10"
+                        Color="Black" />
+                </Border.Effect>
+            </Border>
+
+            <Grid>
+                <Image
+                    Width="590"
+                    Height="500"
+                    HorizontalAlignment="Right"
+                    Opacity=".1"
+                    Source="{StaticResource BackgroundCoffee}" />
+
+                <StackPanel
+                    x:Name="GridProductsMenu"
+                    Width="590"
+                    Height="500"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Right">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        FontFamily="Arial Bold"
+                        FontSize="34"
+                        Foreground="LightGray">
+                        Products Menu
+                    </TextBlock>
+
+                    <ScrollViewer
+                        Height="450"
+                        VerticalAlignment="Bottom"
+                        VerticalScrollBarVisibility="Hidden"
+                        Visibility="Visible">
+
+                        <Grid Width="590" HorizontalAlignment="Right">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="225" />
+                                <RowDefinition Height="225" />
+                                <RowDefinition Height="225" />
+                                <RowDefinition Height="225" />
+                            </Grid.RowDefinitions>
+
+                            <Grid
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource CappuccinoCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Cappuccino
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $1,2
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem1"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource AmericanoCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Americano
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $1
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem2"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource LatteCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Latte
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $1,5
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem3"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource EspressoCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Espresso
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $1
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem4"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource IcedCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Iced Coffee
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $1,5
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem5"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource InstantCoffee}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Instant Coffee
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $0,9
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem6"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}"
+                                            Click="ButtonProductMenuAddItem_Click">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource Сinnamon}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Cinnamon
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $0,35
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem7"
+                                            Click="ButtonProductMenuAddItem_Click"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Width="260"
+                                Height="220"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Border Background="#FFFFE6C8" CornerRadius="20 20 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid Width="260" Height="160">
+                                        <Image Source="{StaticResource Sugar}" />
+                                    </Grid>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Border Background="#FFCDA082" CornerRadius="0 0 20 20">
+                                        <Border.Effect>
+                                            <DropShadowEffect
+                                                BlurRadius="5"
+                                                Direction="315"
+                                                Opacity=".25"
+                                                ShadowDepth="10"
+                                                Color="Black" />
+                                        </Border.Effect>
+                                    </Border>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="0.35*" />
+                                            <ColumnDefinition Width="0.4*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Sugar
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFFF5050">
+                                            $0,1
+                                        </TextBlock>
+                                        <Button
+                                            x:Name="ButtonProductMenuAddItem8"
+                                            Click="ButtonProductMenuAddItem_Click"
+                                            Grid.Column="2"
+                                            Width="30"
+                                            Height="30"
+                                            Padding="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Background="{x:Null}"
+                                            BorderBrush="{x:Null}">
+                                            <materialDesign:PackIcon
+                                                Width="30"
+                                                Height="30"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF5A3C1E"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </ScrollViewer>
+                </StackPanel>
+
+                <StackPanel
+                    x:Name="GridShoppingCart"
+                    Width="590"
+                    HorizontalAlignment="Right"
+                    Visibility="Collapsed">
+
+                    <Grid Height="45">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial bold"
+                            FontSize="34"
+                            Foreground="LightGray">
+                            Shopping Cart
+                        </TextBlock>
+
+                        <Grid
+                            x:Name="GridShoppingCartBuy"
+                            Width="100"
+                            HorizontalAlignment="Right"
+                            Visibility="Collapsed">
+                            <Border Background="#FF916E50" CornerRadius="5,50,5,10" />
+                            <Button
+                                x:Name="ButtonShoppingCartBuy"
+                                Width="50"
+                                Margin="20,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Left"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                Click="ButtonShoppingCartBuy_Click">
+                                <TextBlock
+                                    FontFamily="Arial bold"
+                                    FontSize="24"
+                                    Foreground="#FFDDC2">
+                                    Buy
+                                </TextBlock>
+                            </Button>
+                        </Grid>
+                    </Grid>
+
+                    <ScrollViewer
+                        Width="590"
+                        Height="440"
+                        VerticalScrollBarVisibility="Hidden">
+
+                        <StackPanel>
+                            <Grid
+                                x:Name="GridShoppingCartItem1"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,7.5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource CappuccinoCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName1"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Cappuccino
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice1"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                1,2
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount1"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus1"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus1"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem1"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem2"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,7.5"
+                                Visibility="Collapsed">
+
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource AmericanoCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName2"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Americano
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice2"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                1
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount2"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus2"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus2"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem2"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem3"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,7.5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource LatteCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName3"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Latte
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice3"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                1,5
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount3"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus3"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus3"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem3"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem4"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,7.5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource EspressoCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName4"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Espresso
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice4"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                1
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount4"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus4"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus4"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem4"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem5"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,7.5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource IcedCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName5"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Iced Coffee
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice5"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                1,5
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount5"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus5"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus5"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem5"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem6"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource InstantCoffee}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName6"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Instant Coffee
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice6"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                0,9
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount6"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus6"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus6"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem6"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem7"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource Сinnamon}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName7"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Cinnamon
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice7"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                0,35
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount7"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus7"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus7"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem7"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                x:Name="GridShoppingCartItem8"
+                                Width="550"
+                                Height="140"
+                                Margin="0,0,0,5"
+                                Visibility="Collapsed">
+                                <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                        <ColumnDefinition Width="0.4*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0" HorizontalAlignment="Center">
+                                        <Border
+                                            Width="125"
+                                            Height="125"
+                                            HorizontalAlignment="Left"
+                                            Background="#FFFFE6C8"
+                                            CornerRadius="20">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="315"
+                                                    Opacity=".25"
+                                                    ShadowDepth="10"
+                                                    Color="Black" />
+                                            </Border.Effect>
+                                        </Border>
+
+                                        <Grid Width="125" Height="125">
+                                            <Image Source="{StaticResource Sugar}" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Name
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemName8"
+                                            Grid.Row="1"
+                                            Width="115"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            TextAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            Sugar
+                                        </TextBlock>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.5*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Price
+                                        </TextBlock>
+
+                                        <StackPanel
+                                            Grid.Row="1"
+                                            Margin="0,10,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Top"
+                                            Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                $
+                                            </TextBlock>
+                                            <TextBlock
+                                                x:Name="TextBlockShoppingCartItemPrice8"
+                                                FontFamily="Arial"
+                                                FontSize="24"
+                                                Foreground="White">
+                                                0,1
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="26"
+                                            Foreground="#FFDDC2">
+                                            Count
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockShoppingCartItemCount8"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="24"
+                                            Foreground="White">
+                                            1
+                                        </TextBlock>
+
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*" />
+                                                <ColumnDefinition Width="1*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid
+                                                Grid.Column="0"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountMinus8"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountMinus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Minus" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid
+                                                Grid.Column="1"
+                                                Width="30"
+                                                Height="30"
+                                                VerticalAlignment="Top">
+
+                                                <Border Background="#FFDDC2" CornerRadius="50">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Direction="315"
+                                                            Opacity=".3"
+                                                            ShadowDepth="7"
+                                                            Color="Black" />
+                                                    </Border.Effect>
+                                                </Border>
+
+                                                <Button
+                                                    x:Name="ButtonShoppingCartItemCountPlus8"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Background="{x:Null}"
+                                                    BorderBrush="{x:Null}"
+                                                    Click="ButtonShoppingCartItemCountPlus_Click">
+
+                                                    <materialDesign:PackIcon
+                                                        Width="25"
+                                                        Height="25"
+                                                        Foreground="#FF5A3C1E"
+                                                        Kind="Plus" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                    <Button
+                                        x:Name="ButtonShoppingCartDeleteItem8"
+                                        Grid.Column="5"
+                                        Width="30"
+                                        Height="35"
+                                        Padding="0"
+                                        Background="{x:Null}"
+                                        BorderBrush="{x:Null}"
+                                        Click="ButtonShoppingCartDeleteItem_Click">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="35"
+                                            Foreground="#FFDDC2"
+                                            Kind="Trash" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+
+                <StackPanel
+                    x:Name="GridOrders"
+                    Width="590"
+                    HorizontalAlignment="Right"
+                    Visibility="Collapsed">
+
+                    <Grid Height="45">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="Arial bold"
+                            FontSize="34"
+                            Foreground="LightGray">
+                            Orders
+                        </TextBlock>
+                    </Grid>
+
+                    <ListBox
+                        x:Name="billsList"
+                        Width="590"
+                        Height="435"
+                        HorizontalAlignment="Right"
+                        ScrollViewer.CanContentScroll="False"
+                        ScrollViewer.VerticalScrollBarVisibility="Hidden">
+
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="550" Margin="10,0,0,0">
+
+                                    <Border Background="#FFCDA082" CornerRadius="20,20,20,20" />
+
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="30" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock
+                                            Grid.Row="0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial Bold"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Thanks for your ordering dear customer!
+                                        </TextBlock>
+
+                                        <TextBlock
+                                            x:Name="TextBlockOrdersBill"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="16"
+                                            Foreground="White"
+                                            Text="{Binding Path=OrderContent}" />
+
+                                        <TextBlock
+                                            Grid.Row="2"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial Bold"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Сome again!
+                                        </TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Padding" Value="0" />
+                                <Setter Property="Margin" Value="0,10,0,0" />
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                <Setter Property="VerticalContentAlignment" Value="Center" />
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="BorderBrush" Value="Transparent" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBoxItem">
+                                            <Grid Background="{TemplateBinding Background}">
+                                                <ContentPresenter
+                                                    x:Name="contentPresenter"
+                                                    Margin="{TemplateBinding Padding}"
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                    Content="{TemplateBinding Content}"
+                                                    ContentTemplate="{TemplateBinding ContentTemplate}" />
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>
+                </StackPanel>
+
+                <Grid
+                    x:Name="GridMenu"
+                    Width="60"
+                    HorizontalAlignment="Left"
+                    Panel.ZIndex="100">
+
+                    <Border Background="#FF916E50" CornerRadius="50,10,10,50" />
+                    <StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal">
+
+                            <Button
+                                x:Name="ButtonCloseMenu"
+                                Width="50"
+                                Height="50"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                Click="ButtonCloseMenu_Click"
+                                Visibility="Collapsed">
+
+                                <materialDesign:PackIcon
+                                    Width="50"
+                                    Height="25"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FFDDC2"
+                                    Kind="ArrowLeft" />
+                            </Button>
+                            <Button
+                                x:Name="ButtonOpenMenu"
+                                Width="50"
+                                Height="50"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                Click="ButtonOpenMenu_Click">
+
+                                <materialDesign:PackIcon
+                                    Width="50"
+                                    Height="35"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FFDDC2"
+                                    Kind="Menu" />
+                            </Button>
+                            <TextBlock
+                                Margin="5,0,0,0"
+                                VerticalAlignment="Center"
+                                FontFamily="Arial bold"
+                                FontSize="34"
+                                Foreground="#FFDDC2">
+                                Menu
+                            </TextBlock>
+                        </StackPanel>
+
+                        <ListView Foreground="#FFDDC2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                            <ListViewItem
+                                Height="95"
+                                Padding="0"
+                                Style="{StaticResource ListViewItem}">
+
+                                <Button
+                                    x:Name="ButtonOpenProfile"
+                                    Width="200"
+                                    Height="95"
+                                    Padding="0"
+                                    Background="{x:Null}"
+                                    BorderBrush="{x:Null}"
+                                    Click="ButtonOpenProfile_Click">
+                                    <StackPanel Width="200" Orientation="Horizontal">
+
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="30"
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="#FFDDC2"
+                                            Kind="User" />
+
+                                        <TextBlock
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="#FFDDC2">
+                                            Profile
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </ListViewItem>
+                        </ListView>
+
+                        <ListView Foreground="#FFDDC2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListViewItem
+                                Height="95"
+                                Padding="0"
+                                Style="{StaticResource ListViewItem}">
+                                <Button
+                                    x:Name="ButtonOpenProductsMenu"
+                                    Width="200"
+                                    Height="95"
+                                    Padding="0"
+                                    Background="{x:Null}"
+                                    BorderBrush="{x:Null}"
+                                    Click="ButtonOpenProductsMenu_Click">
+
+                                    <StackPanel Width="200" Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="30"
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="#FFDDC2"
+                                            Kind="Food" />
+
+                                        <TextBlock
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="18"
+                                            Foreground="#FFDDC2">
+                                            Menu
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </ListViewItem>
+                        </ListView>
+
+                        <ListView Foreground="#FFDDC2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListViewItem
+                                Height="95"
+                                Padding="0"
+                                Style="{StaticResource ListViewItem}">
+                                <Button
+                                    x:Name="ButtonOpenShoppingCart"
+                                    Width="200"
+                                    Height="95"
+                                    Padding="0"
+                                    Background="{x:Null}"
+                                    BorderBrush="{x:Null}"
+                                    Click="ButtonOpenShoppingCart_Click">
+
+                                    <StackPanel Width="200" Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="30"
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="#FFDDC2"
+                                            Kind="ShoppingBasket" />
+
+                                        <TextBlock
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Shopping Cart
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </ListViewItem>
+                        </ListView>
+
+                        <ListView Foreground="#FFDDC2" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListViewItem
+                                Height="95"
+                                Padding="0"
+                                Style="{StaticResource ListViewItem}">
+                                <Button
+                                    x:Name="ButtonOpenOrders"
+                                    Width="200"
+                                    Height="95"
+                                    Padding="0"
+                                    Background="{x:Null}"
+                                    BorderBrush="{x:Null}"
+                                    Click="ButtonOpenOrders_Click">
+
+                                    <StackPanel Width="200" Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="30"
+                                            Height="30"
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="#FFDDC2"
+                                            Kind="History" />
+
+                                        <TextBlock
+                                            Margin="15,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontFamily="Arial"
+                                            FontSize="20"
+                                            Foreground="#FFDDC2">
+                                            Orders
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </ListViewItem>
+                        </ListView>
+
+                        <Grid Width="200" Height="60">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="21*" />
+                                <ColumnDefinition Width="179*" />
+                            </Grid.ColumnDefinitions>
+                            <Button
+                                x:Name="ButtonOpenAboutCafe"
+                                Grid.Column="1"
+                                Width="100"
+                                Height="30"
+                                Margin="34,15,45,15"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="ButtonOpenAboutCafe_Click"
+                                Style="{StaticResource TransparentButton}">
+                                <TextBlock
+                                    FontFamily="Arial"
+                                    FontSize="18"
+                                    Foreground="#FFFF5050">
+                                    About Cafe
+                                </TextBlock>
+                            </Button>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+
+                <Grid
+                    x:Name="GridAboutCafe"
+                    Width="0"
+                    Height="500"
+                    HorizontalAlignment="Right"
+                    Panel.ZIndex="100"
+                    Visibility="Collapsed">
+
+                    <Border Background="#FF916E50" CornerRadius="10,50,50,10" />
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel
+                            Grid.Row="0"
+                            Height="60"
+                            Orientation="Horizontal">
+                            <Button
+                                x:Name="ButtonCloseAboutCafe"
+                                Width="30"
+                                Height="30"
+                                Margin="10,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}">
+
+                                <materialDesign:PackIcon
+                                    Width="30"
+                                    Height="30"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FFDDC2"
+                                    Kind="Close" />
+                            </Button>
+
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                FontFamily="Arial bold"
+                                FontSize="22"
+                                Foreground="#FFDDC2">
+                                About Cafe
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1">
+                            <TextBlock
+                                Margin="10,20,0,0"
+                                FontFamily="Arial"
+                                FontSize="20"
+                                Foreground="#FFDDC2">
+                                Product name:
+                            </TextBlock>
+                            <TextBlock
+                                Margin="0,0,10,30"
+                                HorizontalAlignment="Right"
+                                FontFamily="Arial"
+                                FontSize="16"
+                                Foreground="White">
+                                Aromatic Cafe
+                            </TextBlock>
+
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                FontFamily="Arial"
+                                FontSize="20"
+                                Foreground="#FFDDC2">
+                                Company name:
+                            </TextBlock>
+                            <TextBlock
+                                Width="150"
+                                Margin="0,0,10,30"
+                                HorizontalAlignment="Right"
+                                FontFamily="Arial"
+                                FontSize="16"
+                                Foreground="White"
+                                TextAlignment="Right"
+                                TextWrapping="Wrap">
+                                Minsk State College of Electronics
+                            </TextBlock>
+
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                FontFamily="Arial"
+                                FontSize="20"
+                                Foreground="#FFDDC2">
+                                Developer:
+                            </TextBlock>
+                            <TextBlock
+                                Width="180"
+                                Margin="0,0,10,30"
+                                HorizontalAlignment="Right"
+                                FontFamily="Arial"
+                                FontSize="16"
+                                Foreground="White"
+                                TextAlignment="Right"
+                                TextWrapping="Wrap">
+                                Kostko Artem Vladimirovich
+                            </TextBlock>
+
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                FontFamily="Arial"
+                                FontSize="20"
+                                Foreground="#FFDDC2">
+                                Contact E-mail:
+                            </TextBlock>
+                            <TextBlock
+                                Width="120"
+                                Margin="0,0,10,30"
+                                HorizontalAlignment="Right"
+                                FontFamily="Arial"
+                                FontSize="16"
+                                Foreground="White"
+                                TextAlignment="Right"
+                                TextWrapping="Wrap">
+                                artem.kostko@mail.ru
+                            </TextBlock>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Margin="10,0,0,0"
+                                    FontFamily="Arial"
+                                    FontSize="20"
+                                    Foreground="#FFDDC2">
+                                    Version:
+                                </TextBlock>
+                                <TextBlock
+                                    Margin="85,0,0,0"
+                                    VerticalAlignment="Bottom"
+                                    FontFamily="Arial"
+                                    FontSize="16"
+                                    Foreground="White">
+                                    1.1
+                                </TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+                <Grid
+                    x:Name="GridProfile"
+                    Width="0"
+                    Height="500"
+                    HorizontalAlignment="Right"
+                    Panel.ZIndex="100"
+                    Visibility="Collapsed">
+
+                    <Border Background="#FF916E50" CornerRadius="10,50,50,10" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="60" />
+                        </Grid.RowDefinitions>
+                        <StackPanel
+                            Grid.Row="0"
+                            Height="60"
+                            Orientation="Horizontal">
+                            <Button
+                                x:Name="ButtonCloseProfile"
+                                Width="30"
+                                Height="30"
+                                Margin="10,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}">
+
+                                <materialDesign:PackIcon
+                                    Width="30"
+                                    Height="30"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#FFDDC2"
+                                    Kind="Close" />
+                            </Button>
+
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                FontFamily="Arial bold"
+                                FontSize="34"
+                                Foreground="#FFDDC2">
+                                Profile
+                            </TextBlock>
+                        </StackPanel>
+
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid
+                                Grid.Row="0"
+                                Width="150"
+                                Height="150"
+                                Margin="0,0,0,10"
+                                VerticalAlignment="Bottom">
+
+                                <Border
+                                    BorderBrush="#FFDDC2"
+                                    BorderThickness="1"
+                                    CornerRadius="80">
+
+                                    <Border.Effect>
+                                        <DropShadowEffect
+                                            BlurRadius="5"
+                                            Direction="315"
+                                            Opacity=".25"
+                                            ShadowDepth="10"
+                                            Color="Black" />
+                                    </Border.Effect>
+                                </Border>
+
+                                <materialDesign:PackIcon
+                                    Width="150"
+                                    Height="150"
+                                    Margin="0,-10,0,0"
+                                    Foreground="Gray"
+                                    Kind="User">
+
+                                    <materialDesign:PackIcon.Effect>
+                                        <DropShadowEffect
+                                            BlurRadius="5"
+                                            Direction="315"
+                                            Opacity=".25"
+                                            ShadowDepth="10"
+                                            Color="Black" />
+                                    </materialDesign:PackIcon.Effect>
+                                </materialDesign:PackIcon>
+                            </Grid>
+
+                            <StackPanel Grid.Row="1" Width="200">
+
+                                <TextBlock
+                                    x:Name="TextBlockProfileName"
+                                    Width="190"
+                                    Margin="0,0,0,35"
+                                    HorizontalAlignment="Center"
+                                    FontFamily="Arial"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="#FFDDC2"
+                                    TextAlignment="Center"
+                                    TextWrapping="Wrap" />
+
+                                <StackPanel
+                                    Width="200"
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal">
+
+                                    <materialDesign:PackIcon
+                                        Width="25"
+                                        Height="25"
+                                        Margin="5,0,0,0"
+                                        VerticalAlignment="Center"
+                                        Foreground="#FFFF5050"
+                                        Kind="Email" />
+
+                                    <TextBlock
+                                        x:Name="TextBlockProfileEmail"
+                                        Width="140"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Arial"
+                                        FontSize="16"
+                                        Foreground="LightGray"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap" />
+                                </StackPanel>
+                                <StackPanel
+                                    Width="200"
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal">
+
+                                    <materialDesign:PackIcon
+                                        Width="25"
+                                        Height="25"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        Foreground="#FFFF5050"
+                                        Kind="phone" />
+
+                                    <TextBlock
+                                        x:Name="TextBlockProfileTelephone"
+                                        Width="140"
+                                        VerticalAlignment="Center"
+                                        FontFamily="Arial"
+                                        FontSize="16"
+                                        Foreground="LightGray"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid Grid.Row="2">
+                            <Button
+                                x:Name="ButtonProfileSignOut"
+                                Click="ButtonProfileSignOut_Click"
+                                Content="Sign Out"
+                                FontFamily="Arial"
+                                FontSize="16"
+                                FontWeight="Bold"
+                                Foreground="#FFFF5050"
+                                Style="{StaticResource TransparentButton}" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,121 @@
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\App.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.cache
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.lref
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe.config
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.pdb
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.dll
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.pdb
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Resources\Images.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\App.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Resources\ButtonStyle.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Resources\TextBoxStyle.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.g.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Properties.Resources.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.GenerateResource.cache
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CoreCompileInputs.cache
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CopyComplete
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.pdb
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.dll
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.xml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.xml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.InitialCreate.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.DataAnnotations.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.AromaticCafeDB.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.AromaticCafeDBChanges.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.dataCafe.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.update.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.dataupdate.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Migrations.telephone.resources
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\Resources\ListItemStyle.baml
+D:\College\КПиЯП\Курсовая работа\Cafe\PROGECT\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csprojAssemblyReference.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csprojAssemblyReference.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Resources\Images.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\App.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_Content.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.lref
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.exe
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe.config
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\App.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Resources\ButtonStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Resources\ListItemStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\Resources\TextBoxStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.g.resources
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Properties.Resources.resources
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.GenerateResource.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CoreCompileInputs.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CopyComplete
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe.config
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\AromaticCafe.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\EntityFramework.SqlServer.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignColors.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csprojAssemblyReference.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Resources\ButtonStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Resources\Images.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\App.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_Content.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe_MarkupCompile.lref
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\App.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\MainWindow.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\MainPage.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignIn.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Pages\SignUp.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Resources\ListItemStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\Resources\TextBoxStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.g.resources
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.Properties.Resources.resources
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.GenerateResource.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CoreCompileInputs.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.csproj.CopyComplete
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Debug\AromaticCafe.pdb

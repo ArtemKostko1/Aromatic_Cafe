@@ -1,0 +1,76 @@
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.exe.config
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.exe
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.SqlServer.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignColors.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.SqlServer.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignColors.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.pdb
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.xml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csprojAssemblyReference.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Resources\Images.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\MainWindow.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\MainPage.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\SignIn.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\SignUp.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\App.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_Content.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_MarkupCompile.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_MarkupCompile.lref
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\App.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\MainWindow.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\MainPage.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\SignIn.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Pages\SignUp.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Resources\ButtonStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Resources\ListItemStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\Resources\TextBoxStyle.baml
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.g.resources
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.Properties.Resources.resources
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.GenerateResource.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.CoreCompileInputs.cache
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.CopyComplete
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.exe
+D:\College\КПиЯП\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.exe.config
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\AromaticCafe.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.SqlServer.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignColors.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\EntityFramework.SqlServer.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignColors.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.pdb
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\bin\Release\MaterialDesignThemes.Wpf.xml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csprojAssemblyReference.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Resources\ButtonStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Resources\Images.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\MainWindow.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\MainPage.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\SignIn.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\SignUp.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\App.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_Content.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_MarkupCompile.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe_MarkupCompile.lref
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\App.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\MainWindow.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\MainPage.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\SignIn.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Pages\SignUp.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Resources\ListItemStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\Resources\TextBoxStyle.baml
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.g.resources
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.Properties.Resources.resources
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.GenerateResource.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.CoreCompileInputs.cache
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.csproj.CopyComplete
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.exe
+D:\College\КПиЯП\Курсовая работа\AromaticCafe\AromaticCafe\obj\Release\AromaticCafe.pdb

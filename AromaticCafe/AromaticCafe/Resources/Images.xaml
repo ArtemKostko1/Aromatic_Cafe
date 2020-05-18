@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <BitmapImage x:Key="Background" UriSource="../Images/Cafe_background.jpg" />
+    <BitmapImage x:Key="BackgroundCoffee" UriSource="../Images/CapOfCoffee.png" />
+    <BitmapImage x:Key="CappuccinoCoffee" UriSource="../Images/Сappuccino.png" />
+    <BitmapImage x:Key="AmericanoCoffee" UriSource="../Images/Americano.png" />
+    <BitmapImage x:Key="EspressoCoffee" UriSource="../Images/Espresso.png" />
+    <BitmapImage x:Key="IcedCoffee" UriSource="../Images/IcedCoffee.png" />
+    <BitmapImage x:Key="InstantCoffee" UriSource="../Images/InstantCoffee.png" />
+    <BitmapImage x:Key="LatteCoffee" UriSource="../Images/Latte.png" />
+    <BitmapImage x:Key="Сinnamon" UriSource="../Images/Cinnamon.png" />
+    <BitmapImage x:Key="Sugar" UriSource="../Images/Sugar.png" />
+</ResourceDictionary>

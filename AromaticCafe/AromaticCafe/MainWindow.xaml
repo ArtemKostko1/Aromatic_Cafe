@@ -1,0 +1,29 @@
+﻿<Window
+    x:Class="AromaticCafe.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AromaticCafe"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:p="clr-namespace:AromaticCafe.Pages"
+    Title="Aromatic Cafe"
+    Width="720"
+    Height="720"
+    ResizeMode="CanMinimize"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <p:SignUp x:Key="Page" />
+    </Window.Resources>
+
+    <Grid> 
+        <!--  Переключение между страницами  -->
+        <Frame
+            x:Name="MainFrame"
+            Content="{StaticResource Page}"
+            Focusable="False"
+            NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>
+
